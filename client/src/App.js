@@ -17,14 +17,33 @@ class App extends Component {
             users: {},
             userNames: [],
             allOrders: [],
-            orders: []
+            orders: [],
+            ArrToSort: []
         };
 
     }
 
     componentDidMount() {
-
+        this.fillArray();
     } 
+
+    fillArray = () => {
+        let maxNums = 50;
+        let numSet = new Set(null);
+
+        while(maxNums > 0) {
+            let num = Math.floor(Math.random() * 101);
+
+            if(!numSet.has(num)) {
+                numSet.add(num);
+                maxNums--;
+            }
+        }
+
+        this.setState({
+            ArrToSort: [...numSet]
+        })
+    }
 
     retreiveUsers() {
         
@@ -146,7 +165,7 @@ class App extends Component {
     <div>   {/*Top Level Container*/} 
 
         <div className="section-image merge">
-        <VisualMerge />
+        <VisualMerge Arr={this.state.ArrToSort} />
         </div> 
     </div>
     );

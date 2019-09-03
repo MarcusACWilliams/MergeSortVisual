@@ -256,7 +256,20 @@ body {
 
 .section-image.merge {
   height: 200px;
-  
+
+}
+
+.sortList {
+  list-style-type: none;
+  width: 100%;
+}
+
+.sortBar {
+  display: inline-block;
+  height: 100%;
+  width: 2%;
+  border-style: solid;
+  border-color: #1ac6ff;
 }
 
 .square {

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 export class VisualMerge extends Component {
     state = {
@@ -21,28 +20,16 @@ export class VisualMerge extends Component {
     }
 
     render() {
-        
+        let Arr = this.props.Arr;
         return (
-            <div className="textbox">
-                    {'Customer Name: '}
-                    <div> {'Address: ' }</div>
-                    <div>
-                        {'Items: '}
-                        <button className="basebtn highlight" onClick={this.showItems}>
-                        {this.state.show ? 'hide': 'show'}
-                        </button>
-                            { this.state.show ?
-                                <ul>
 
-                                </ul>: null}
-                        </div>
-
-                    <div>
-                    <button className="basebtn delbtn" >
-                            {/*<i class="fa fa-trash" aria-hidden="true"></i>*/}
-                            <i class="far fa-window-close delicon" aria-hidden="true"></i>
-                    </button>
-                    </div>
+            <div>
+                <ul className="sortList">
+                { Arr.map( (item,index) => {
+                    return <li className="sortBar" key={index}>{item}</li>
+                }) 
+                }
+                </ul>
             </div>
         )
     }

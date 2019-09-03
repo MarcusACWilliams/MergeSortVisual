@@ -34,7 +34,7 @@ export class TodoItem extends Component {
                         {this.state.show ? 'hide': 'show'}
                         </button>
                             { this.state.show ?
-                                <ul>
+                                <ul >
                                 { items.map((item, index) => {
                                                 {item.item}
                                                 return <li key={index}>{item.item + '            qty:'+ item.qty }</li>
