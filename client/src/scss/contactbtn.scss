@@ -1,0 +1,73 @@
+.contactsbar {
+    display: flex;
+    width: 100vw;
+    height: 2em;
+    justify-content: center;
+    margin-top: 0;
+    padding: 0;
+    z-index: 5;
+    //overflow: hidden;
+    //background-color: #333333;
+}
+
+a.contacts {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+}
+
+li.contacts {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    float: left;
+    border-radius: 50%;
+    border-color: white; 
+    border-style: solid;
+    height: 1.7em;
+    width: 1.7em;
+    //text-align: center;
+    color: white;
+    //padding: auto;
+    //background:url('../images/startup-stock.jpg') no-repeat;
+    background-color: grey;
+    z-index: 6;
+    
+    margin: 5px;
+    overflow: hidden;
+}
+
+.contactbtn {
+    display: flex;
+    //flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: baseline;
+    flex-flow: row;
+
+    position: relative;
+    height: 1em;
+    max-height: 4em;
+    //width: 8em;
+    max-width: 9em;
+    padding: .35em;
+    margin: 0 .25em 0 .25em;
+
+    overflow: hidden;
+    //background: var(--backgroundImage) no-repeat;
+    //background: url('../images/resume2.jpg') no-repeat;
+    //vertical-align: middle;
+    color: white;
+    background-color: transparent;
+    border: .1em solid rgb(64, 170, 230);
+    border-radius: 4em;
+
+    //font-size: 1em;
+    //font-size: calc( 18px + (24 - 18) * ( (100vw - 375px) / ( 812 - 375) ));
+    text-decoration: none;
+    opacity: 1;
+    transition: all .20s linear;
+}

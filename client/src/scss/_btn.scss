@@ -1,0 +1,162 @@
+
+.basebtn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: baseline;
+    flex-flow: row;
+    
+    position: relative;
+    height: 2em;
+    max-height: 5.0em;
+    min-width: 2em;
+    max-width: 10em;
+    padding: .38em;
+    margin: 0 .25em 0 .25em;
+
+    overflow: hidden;
+    
+    background-color: grey;
+    border: .15em solid white;
+    border-radius: 4em;
+
+    text-align: center;
+    text-decoration: none;
+    opacity: 1;
+    transition: all .20s linear;
+}
+
+.pop {
+
+    overflow: hidden;
+    background-color: transparent;
+    border-color: rgb(64, 170, 230);
+
+    &:hover , &:active ,&:focus{
+    background-size: cover;
+    //background: url('../images/startup-stock.jpg');
+    //font-size: 2em;
+    height:4em;
+    //width: auto;
+    border-radius: 0em;
+    //top: -27px;
+    //left: -3em;
+    opacity: 1;
+    transform: translate(0,0);
+    transition: all .20s linear;
+    }
+}
+
+.highlight {
+    
+    color: white;
+
+    background-color: rgb(64, 170, 230);
+    border-color: white;
+    transition: all .2s linear;
+
+    &:hover, &:active ,&:focus{
+    background-color: rgb(64, 170, 230);
+    border: .15em solid rgb(64, 170, 230);
+    border-radius: 2em;
+    //transform: translate(0,-8px);
+    height:2.3em;
+    //max-width:12em;
+    }
+}
+
+.testbtn {
+    position: relative;
+    //top: 0;
+    height: 25.1579px;
+    max-height: 32px;
+    min-width: 1em;
+    max-width: 9em;
+    padding: .45em;
+    margin: 0 .25em 0 .25em;
+
+    overflow: hidden;
+    color: white;
+    background-color: grey;
+    border: .15em solid white;
+    border-radius: 4em;
+
+    //font-size: 1em;
+    text-align: center;
+}
+.btnbg{
+	position: absolute;
+    //background-color: rgb(64, 170, 230);
+	top:-.2em;
+	left:-.2em;
+	width:110%;
+	height:120%;
+	//z-index:3;
+	//background: var(--backgroundImage) no-repeat;
+    background-size: cover;
+    //border-radius: 2rem;
+	filter: alpha(opacity=50);
+    opacity:.2;	
+    transition: all .5s linear;
+    
+    &:hover, &:active ,&:focus{
+    border-radius: 0;
+    
+    }
+}
+
+.navicons {
+    position: relative;
+    max-width: 1.5em;
+    max-height: 1.5em;
+    font-size: 1em;
+    //align-self: center;
+    //margin-right: -.7em;
+    transition: all .5s linear;
+}
+
+.contacticons {
+    position: relative;
+    font-size: 1em;
+    max-width: 1.8em;
+    max-height: 1.8em;
+    //align-self: center;
+    //margin-right: -.7em;
+    transition: all .5s linear;
+}
+
+.btnbigcontent {
+    position: relative;
+    //align-self: baseline;
+    //max-width: 8em;
+    //height: 1em;
+    //max-height: 2em;
+    font-size: .8em;
+    font-family: bourbon;
+    letter-spacing: .05em;
+    margin-left: 0.45em;
+    //margin-bottom: .02em;
+    //transform: scaleX(1.25) scaleY(1.25);
+    transition: all .5s linear;
+    //vertical-align: text-center;
+
+
+}
+
+.main-button {
+    //flex: 0 1 auto;
+    position: absolute;
+    width: 5.5rem;
+    height: 5.5rem;
+    /*border-radius: 100%;*/
+    background-color: rgb(64, 170, 230);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: lighter;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 1em;
+    padding: 0.5em;
+}

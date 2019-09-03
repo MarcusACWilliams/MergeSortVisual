@@ -1,0 +1,331 @@
+
+@import 'btn';
+@import 'globaleffects';
+@import 'contactbtn';
+@import 'mod-con';
+
+body {
+  margin: 0;
+  padding: 0;
+  //font-size: 100%;
+  //font-size: calc( 16px + (19) * ( (100vw - 600px) / (600) ) ); /*16px to 35px*/
+  font-size: 24px;
+/*                 13.33px + (22.66px - 13.33px) * ( (100vw - 375px) / (812px - 375px) )
+                                   9.33               0 -> 437            437         */
+  line-height:1;
+ /* font-family: sans-serif;*/
+}
+@media screen and (max-width: 1200px) and (min-width: 813px) {
+    body {
+    font-size: calc( 17px + (24 - 17) * ( (100vw - 850px) / ( 1200 - 850) ));
+/*                  13.33px + (22.66px - 13.33px) * ( (100vw - 375px) / (812px - 375px) )
+                                     9.33               0 -> 437            437         */
+    }
+}
+
+@media screen and (max-width: 812px) and (min-width: 374px) {
+    body {
+    font-size: calc( 13.33px + (7) * ( (100vw - 375px) / ( 812 - 375) ));
+/*                  13.33px + (22.66px - 13.33px) * ( (100vw - 375px) / (812px - 375px) )
+                                     9.33               0 -> 437            437         */
+    }
+}
+
+* { 
+    outline: 0;
+    box-sizing: border-box;
+}
+
+#modal-root {
+  position: relative;
+  z-index: 999;
+}
+
+.modal {
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  height: 75%;
+  width: 75%;
+  margin-right: 30%;
+  //margin-left: 30%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  margin-top: 7em;
+}
+
+.section-image {
+    display: flex;
+    height: 200px;
+    width: 98%;
+    left: 0px;
+    top: 0px;
+	margin: 1% 1% 1% 1%;
+    overflow: hidden;
+	position: relative;
+	background: white;
+    //background:url('../images/startup-stock.jpg') no-repeat;
+    background-size: 100%, 100%;
+}
+
+.section-image.white {
+    background: beige
+}
+
+.section-image.flex {
+    display: block;
+    height: auto;
+    background: beige
+}
+
+.square {
+    height: 200px;
+}
+
+.section-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  color: white;
+}
+
+#contentbody{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	position: relative;
+	left: 0px;
+	width: 100%;
+	height: auto;
+
+}
+
+#container {
+
+	height: 200px;
+    width: 98%;
+    left: 0px;
+    top: 0px;
+	margin: 1% 1% 5% 1%;
+	position: relative;
+	background: white;
+}
+
+#animate {
+	width: 50px;
+	height: 25px;
+    left: 0px;
+    top: 0px;
+	position: relative;
+	background-color: rgb(64, 170, 230);
+}
+
+.topnav {
+	display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    padding-top: .5em;
+	//position: -webkit-sticky; /* Safari */
+    position: fixed;
+    //top: .75em;
+    top: 0;
+	width: 101vw;
+	height: 3em;
+
+	background-color: var(--navBgColor, transparent);	
+	color: white;
+	text-shadow: 0.75pt 0.75pt 0.75pt white;
+	z-index: 15;
+
+    &:hover {
+        background-color: hsl(0, 0%, 30%);
+        //align-items: flex-start;
+        //align-items: stretch;
+    }
+}
+
+.barcolor {
+    background-color: hsl(0, 0%, 30%);
+    top: 0;
+}
+
+.top {
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+	position: relative;
+	width: 100vw;
+    height: 100vh;
+	//min-height: 175px;
+	//max-height: 750px;
+    //padding-top: 0px;
+
+    overflow: visible;
+    z-index: 2;
+	padding: 0.01em ;
+
+	font-weight: 300;
+	font-family: bourbon;
+    text-decoration: none;
+
+    letter-spacing: .1em;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    //background: url('../../public/images/guytyping.jpg') no-repeat ;
+    background-attachment: fixed;
+    background-size: 125vw 100vh;	
+}
+
+.top > * {
+    margin-bottom: 1em;
+}
+
+@media (hover :none){
+    .top {
+        background-attachment: initial;
+    }
+}
+
+div .myheading{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	position: relative;
+	
+	background-color: #ffffff;
+
+	//width: 100%;
+    //height: 500px;
+    padding-top: 0px;
+    line-height: 50px;
+    overflow: hidden;
+    z-index: 2;
+	//padding: 0.01em;
+	text-align: center;
+}
+
+.bg-image {
+	position:relative;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+    max-height: 730px;
+	z-index:3;
+	//background:url('../images/keyboard.jpg') no-repeat;
+    background-size: contain;
+	//filter: alpha(opacity=50);
+    opacity: .8;	
+}
+
+.bg-image-tint {
+	position: absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+    //max-height: 730px;
+	z-index:2;
+	box-shadow: 100vw  0px rgba(0, 0, 0, 0.3) inset;
+}
+
+.title {
+    display: flex;
+    text-align: center;
+    z-index:5;
+	transform: scaleY(1.3);
+    //position: relative;
+    
+}
+
+/*Red Center Line*/
+.centerLine:after {
+    content:"";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px dotted #ff0000;
+}
+
+span.tt {
+    text-align: center;
+    
+}
+
+.ac {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+
+	color: #1ac6ff;
+    max-width: 25%;
+	font-size: 2em;
+    padding-left: .2em;
+
+}
+
+.left {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex: 1;
+    color: white;
+}
+
+.left span{
+    margin-bottom: .15em;
+}
+
+.right {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex: 1;
+    color: white;
+}
+.right span{
+  margin-bottom: .15em;
+}
+
+
+.dbl-border {
+	width: 80vw;
+	margin-top: 12px;
+	margin-bottom: 10px;
+	border-bottom: 16px double white;
+	z-index:5;
+}
+
+a {
+color: white;
+
+}
+
+.defmargin {
+    margin: 10px 10px 0px 10px;
+}
+
+.textbox {
+    display: block;
+    margin: 10px 5px 0px 5px;
+    border: 1px solid black;
+    outline-style: double;
+    outline-color: green;
+}

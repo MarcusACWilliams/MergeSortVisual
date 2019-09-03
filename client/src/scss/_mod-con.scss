@@ -1,0 +1,16 @@
+.mod-con {
+    display: flex;
+    height: 40vw;
+    max-height: 300px;
+    width: 100vw;
+    left: 0px;
+    top: 0px;
+	//margin: 1% 1% 1% 1%;
+    overflow: hidden;
+	position: relative;
+	background: rgb(242, 242, 242);
+    background:url('../images/windmill.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100%, 100%;
+}

@@ -1,0 +1,7 @@
+{
+    "mongoHost": "35.206.127.173",
+    "mongoPort": "27017",
+    "mongoDatabase": "pantry",
+    "mongoUser": "admin",
+    "mongoPass": "temple"
+  }

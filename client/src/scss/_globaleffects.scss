@@ -1,0 +1,19 @@
+
+.fader {
+
+    opacity: 0;
+    transition: opacity .4s linear;
+
+    &:hover{
+    opacity: 1;
+    transition: opacity .4s linear;
+    }
+}
+
+.transAllMed {
+    transition: .5s linear;
+}
+
+.transAllFast {
+    transition: .25s linear;
+}
