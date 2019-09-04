@@ -21,6 +21,7 @@ class App extends Component {
             ArrToSort: []
         };
 
+
     }
 
     componentDidMount() {
@@ -28,11 +29,11 @@ class App extends Component {
     } 
 
     fillArray = () => {
-        let maxNums = 50;
+        let maxNums = 25;
         let numSet = new Set(null);
 
         while(maxNums > 0) {
-            let num = Math.floor(Math.random() * 101);
+            let num = Math.floor(Math.random() * 100);
 
             if(!numSet.has(num)) {
                 numSet.add(num);

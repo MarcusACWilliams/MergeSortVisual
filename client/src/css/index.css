@@ -260,14 +260,21 @@ body {
 }
 
 .sortList {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  display: flex;
+  align-items: flex-end;
   list-style-type: none;
   width: 100%;
 }
 
 .sortBar {
   display: inline-block;
-  height: 100%;
-  width: 2%;
+
+  /*height: 100%;*/
+  height: var(--bar-height);
+  
+  width: 2em;
   border-style: solid;
   border-color: #1ac6ff;
 }
