@@ -108,7 +108,7 @@ class MergeSortV2 {
             current++;
             if(rightVirtualIndex > arrToMerge[1]) {
                 return;
-            }\        //Virtual Merge state
+            }       //Virtual Merge state
         while(leftVirtualIndex < rightVirtualIndex) {
 
             if(this.sortedArr[leftVirtualIndex] <= this.sortedArr[rightVirtualIndex] ) {
